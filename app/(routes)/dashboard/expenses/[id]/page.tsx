@@ -1,9 +1,9 @@
 "use client";
 import { useUser } from "@clerk/nextjs";
 import React, { useState, use } from "react";
-import BudgetItem from "../../budgets/_components/BudgetItem";
-import AddExpenses from "../_components/AddExpenses";
-import ExpenseListTable from "../_components/ExpenseListTable";
+import BudgetItem from "@/app/(routes)/dashboard/budgets/_components/BudgetItem";
+import AddExpenses from "@/app/(routes)/dashboard/expenses/_components/AddExpenses";
+import ExpenseListTable from "@/app/(routes)/dashboard/expenses/_components/ExpenseListTable";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Trash } from "lucide-react";
 import {
@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import EditBudget from "../_components/EditBudgets";
+import EditBudget from "@/app/(routes)/dashboard/expenses/_components/EditBudgets";
 
 // Mock Data
 const MOCK_BUDGET = {

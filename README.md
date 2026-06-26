@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 Financial Management Dashboard
 
-## Getting Started
+A modern, visually appealing financial management application built for a frontend developer portfolio. This project demonstrates the ability to create complex, data-driven user interfaces with a focus on UX/UI, responsiveness, and state management.
 
-First, run the development server:
+## 🚀 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application allows users to track their budgets, expenses, and income streams through an intuitive dashboard. To make this project easily accessible for portfolio review, it uses **mock data** to simulate a full-stack experience without requiring a database setup.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
+- **Interactive Dashboard:** Real-time overview of total budgets, income, and expenses.
+- **Budget Management:** Create and monitor budget categories with custom emoji icons.
+- **Expense Tracking:** Detailed list of expenses with date and amount tracking.
+- **Income Streams:** Manage multiple sources of income.
+- **Data Visualization:** Beautiful bar charts and summary cards using Recharts.
+- **Authentication:** Secure user authentication integrated via Clerk.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Shadcn UI](https://ui.shadcn.com/) & [Radix UI](https://www.radix-ui.com/)
+- **Charts:** [Recharts](https://recharts.org/)
+- **Authentication:** [Clerk](https://clerk.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
-## Learn More
+## 📦 Installation & Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd frontend_management_app
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Set up Environment Variables:**
+   Create a `.env.local` file and add your Clerk API keys:
+   ```env
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
+   CLERK_SECRET_KEY=your_secret_key
+   ```
 
-## Deploy on Vercel
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **View the app:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Note for Reviewers
+This project is designed as a **Frontend Showcase**. All data operations (Creating budgets/incomes) are simulated using mock functions to ensure the application is immediately functional and demonstrable without external database configuration.
